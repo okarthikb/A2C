@@ -18,7 +18,7 @@ from torch.distributions import Categorical
 
 
 """
-name = "Pong-v0"
+name = "PongNoFrameskip-v4"
 """
 name = "CartPole-v0"  #
 e = gym.make(name)
