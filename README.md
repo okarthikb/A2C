@@ -6,6 +6,14 @@ In policy gradient methods, we are trying to find the optimal policy function (a
 
 ![](returns.png)
 
-Using A2C, we see the agent gets max return by epoch 50. Time to reach epoch 50 (for Apple M1 8GB) is <5s. Make sure to install the required packages. Run `pip install -r requirements.txt` in your virtual environment. Train the agent by running `train.py`, and render gameplay by running `play.py`. 
+Using A2C, we see the agent gets max return by epoch 50. Time to reach epoch 50 (for Apple M1 8GB) is <5s. Make sure to install the required packages.
 
-`python3 play.py --render True --fps 45 --loc checkpoints/pi50.pt` renders the gameplay at 45 fps using the model @ checkpoints/pi50.pt...
+To start, do this in terminal
+
+1. create a virtual env by running `virtualenv path/to/virtualenv`
+2. run `cd path/to/virtualenv`, then `source bin/activate` to activate env
+3. clone repo using `git clone`, then run `mv A2C/* .` and `rm -rf ./A2C`
+4. install packages using `pip install -r requirements.txt`
+5. make folder to store train checkpoints - `mkdir checkpoints`
+6. train the agent by running `python3 train.py > checkpoints/output.txt`
+7. test the agent by running `python3 play.py --render True`
