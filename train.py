@@ -90,7 +90,7 @@ pi = Actor().to(device("cpu"))
 V = Critic().to(device("cpu"))
 
 
-epochs = 200
+epochs = 50
 mod = 10
 
 assert epochs % mod == 0
