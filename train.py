@@ -127,7 +127,6 @@ def computeLoss(Vs, logps, rs):
   return dot(As, As) - dot(As.detach(), logps)
 
 
-
 """
 -- generate a trajectory --
 returns predicted values - Vs, 
