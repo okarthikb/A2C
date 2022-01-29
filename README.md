@@ -4,4 +4,6 @@ A2C stands for Advantage Actor Critic. In policy gradient methods, we are trying
 
 ![](returns.png)
 
-Using A2C, we see the agent gets max return by epoch 50. Time to reach epoch 50 (for Apple M1 8GB) is ~5s. Make sure to run `pip install -r requirements.txt` (or `conda install --file requirements.txt`).
+Using A2C, we see the agent gets max return by epoch 50. Time to reach epoch 50 (for Apple M1 8GB) is ~5s. Make sure to install the required packages. Run `pip install -r requirements.txt` in your virtual environment. Train the agent by running `train.py`, and render gameplay by running `play.py`. 
+
+`python3 play.py --render True --fps 45 --loc checkpoints/pi50.pt` renders the gameplay at 45 fps using the model @ checkpoints/pi50.pt...
