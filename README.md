@@ -12,7 +12,7 @@ To start, do this in terminal
 
 1. create a virtual env by running `virtualenv path/to/virtualenv`
 2. run `cd path/to/virtualenv`, then `source bin/activate` to activate env
-3. clone repo using `git clone`, then run `mv A2C/* .` and `rm -rf ./A2C`
+3. clone repo using `git clone`, then run `mv A2C/* .` and `rm -rf A2C`
 4. install packages using `pip install -r requirements.txt`
 5. make folder to store train checkpoints - `mkdir checkpoints`
 6. train the agent by running `python3 train.py > checkpoints/output.txt`
