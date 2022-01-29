@@ -1,6 +1,8 @@
 # A2C
 
-A2C stands for Advantage Actor Critic. In policy gradient methods, we are trying to find the optimal policy function (a neural net outputs probability distribution of actions to take). In value based methods, we are trying to find the value network(s) (Q and V) and the optimal policy is just picking the action with maximum expected reward, i.e., max(Q(s, a)) in each state. In Actor-Critic methods, we train both policy network(s) and value network(s).
+A2C stands for Advantage Actor Critic (read the paper [Asynchronous Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1602.01783v2)).
+
+In policy gradient methods, we are trying to find the optimal policy function (a neural net outputs probability distribution of actions to take). In value based methods, we are trying to find the value network(s) (Q and V) and the optimal policy is just picking the action with maximum expected reward, i.e., max(Q(s, a)) in each state. In Actor-Critic methods, we train both policy network(s) and value network(s).
 
 ![](returns.png)
 
