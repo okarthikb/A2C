@@ -16,6 +16,7 @@ from torch.nn import Module, Conv2d, Flatten, Linear
 from torch.nn.functional import relu, softmax
 from torch.distributions import Categorical
 
+
 """
 name = "Pong-v0"
 """
@@ -90,13 +91,16 @@ V = Critic().to(device("cpu"))
 
 
 epochs = 200
+mod = 10
+
+assert epochs % mod == 0
+
 N = 5
 """
 l = 3
 """
 l = 1  #
 gamma = 0.9999
-mod = 10
 lr = 5e-3
 
 opt = Adam(list(pi.parameters()) + list(V.parameters()), lr)
