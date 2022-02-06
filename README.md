@@ -1,4 +1,4 @@
-# A2C
+# a2c
 
 A2C stands for Advantage Actor Critic (read the paper [Asynchronous Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1602.01783v2)).
 
